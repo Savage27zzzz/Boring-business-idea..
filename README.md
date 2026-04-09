@@ -17,6 +17,24 @@ Generates 10 boring-but-profitable business ideas personalized to your skills, b
 3. Add `GEMINI_API_KEY` to Environment Variables
 4. Deploy
 
+## Telegram Bot
+
+The same generator also runs as a Telegram bot.
+
+### Setup
+1. Create a bot with [@BotFather](https://t.me/BotFather) on Telegram
+2. Copy the bot token
+3. Add to `.env.local`:
+   ```
+   TELEGRAM_BOT_TOKEN=your-token-here
+   GEMINI_API_KEY=your-gemini-api-key-here
+   ```
+4. Run: `npm run bot`
+
+### Commands
+- `/start` — Welcome message
+- `/generate` — Start the 5-step questionnaire to get 10 personalized ideas
+
 ## Tech Stack
 - Next.js 14 (App Router)
 - Tailwind CSS
